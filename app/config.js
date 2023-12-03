@@ -1,9 +1,13 @@
 const dotenv = require("dotenv");
+const path = require("path");
 
 dotenv.config();
+
+const rootPath = path.resolve(__dirname, "..");
+
 module.exports = {
-  rootPath: path.resolve(__dirname, ".."),
-  secretkey: process.env.SECRET_KEY,
+  rootPath: rootPath,
+  secretKey: process.env.SECRET_KEY,
   serviceName: process.env.SERVICE_NAME,
   dbHost: process.env.DB_HOST,
   dbPort: process.env.DB_PORT,
