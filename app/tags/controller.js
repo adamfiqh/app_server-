@@ -1,5 +1,5 @@
 // controllers/tagController.js
-const Tag = require("../models/tagModel");
+const Tag = require("../tags/model");
 
 // Menampilkan semua tag
 exports.getAllTags = async (req, res) => {

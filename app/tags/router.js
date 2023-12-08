@@ -2,7 +2,7 @@
 const express = require("express");
 const router = express.Router();
 const multer = require("multer");
-const tagController = require("../controllers/tagController");
+const tagController = require("../tags/controller");
 
 // Konfigurasi Multer
 const storage = multer.diskStorage({
